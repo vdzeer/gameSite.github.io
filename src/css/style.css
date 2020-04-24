@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("../fonts/Bebas/BebasNeueBold.eot");
+  src: url("../fonts/Bebas/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas/BebasNeueBold.woff") format("woff"), url("../fonts/Bebas/BebasNeueBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-weight: 300;
+  color: #1A1917;
+  font-size: 18px;
+}
+
+.container {
+  width: 1240px;
+  margin: auto;
+}
+
+.hero {
+  padding-top: 20px;
+  height: 960px;
+  background: url("../img/hero/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-links__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-weight: 900;
+}
+
+.navbar-links__link:last-child {
+  margin-right: 0;
+}
+
+.navbar-other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
