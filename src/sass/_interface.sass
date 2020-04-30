@@ -9,3 +9,36 @@ body
 .container 
     width: 1240px
     margin: auto
+
+.btn
+    border: none
+    background: linear-gradient(183.46deg, #FFB548 11.27%, #F3AF34 90.4%)
+    border-radius: 4px
+    cursor: pointer
+    transition: 1s
+    &-text, &-price
+        font-size: 16px
+        line-height: 22px
+        color: $text-black
+        +bold
+    &-price
+        margin-left: 26px
+        position: relative
+    &-price::before
+        content: ''
+        position: absolute
+        left: -15px
+        top: 0
+        height: 100%
+        width: 1px
+        background-color: $text-black
+
+.btn:hover
+    background: lighten(#F3AF34, 10%)
+    
+
+button:active, button:focus 
+  outline: none
+
+button::-moz-focus-inner 
+  border: 0

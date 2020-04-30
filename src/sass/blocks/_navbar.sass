@@ -17,3 +17,27 @@
     &-other
         display: flex
         align-items: center
+    &-lang
+        &__item
+            text-decoration: none
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: $text-white
+            +bold
+    &-social
+        position: relative
+        margin-left: 47px
+        &__item
+            text-decoration: none
+        &__item:last-child
+            margin-left: 10px
+    &-social::before
+        content: ''
+        position: absolute
+        left: -15px
+        top: 0
+        height: 100%
+        width: 0.1px
+        background-color: $text-black

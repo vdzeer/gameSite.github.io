@@ -1,3 +1,47 @@
 .hero
     padding-top: 20px
+    height: 960px
     background: url('../img/hero/bg.jpg') no-repeat center top / cover
+    &-content
+        display: flex
+        flex-direction: column
+        margin-top: 220px
+        margin-bottom: 360px
+        &__title
+            margin: 0
+            margin-bottom: 7px
+            text-align: center
+            font-size: 80px
+            line-height: 80px
+            letter-spacing: 3px
+            color: $text-white
+            +header
+        &__subtitle
+            margin-bottom: 29px
+            text-align: center
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            color: $text-white
+            display: inline-block
+            +header
+        &__btn
+            margin: auto
+            width: 270px
+            height: 60px
+    &-scroll
+        &__a
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+            text-decoration: none
+        &__text
+            font-size: 12px
+            line-height: 22px
+            text-transform: uppercase
+            color: $text-white
+            margin-bottom: 5px
+            +bold
+
+        
