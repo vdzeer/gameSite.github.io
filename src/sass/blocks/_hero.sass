@@ -1,6 +1,6 @@
 .hero
     padding-top: 20px
-    height: 960px
+
     background: url('../img/hero/bg.jpg') no-repeat center top / cover
     &-content
         display: flex
@@ -30,6 +30,7 @@
             width: 270px
             height: 60px
     &-scroll
+        margin-bottom: 50px
         &__a
             display: flex
             align-items: center
@@ -44,4 +45,17 @@
             margin-bottom: 5px
             +bold
 
-        
+@media (max-width: 820px)
+    .hero
+        &-content
+            margin-top: 175px
+            margin-bottom: 175px
+            &__title
+                font-size: 33px
+                line-height: 33px
+            &__subtitle
+                font-size: 18px
+                line-height: 18px
+            &__btn
+                width: 260px
+                height: 44px

@@ -31,14 +31,26 @@ body
         top: 0
         height: 100%
         width: 1px
-        background-color: $text-black
+        background-color: #222
 
 .btn:hover
-    background: lighten(#F3AF34, 10%)
-    
+    background: lighten(#FFB548, 10%)
 
 button:active, button:focus 
-  outline: none
+    outline: none
 
 button::-moz-focus-inner 
-  border: 0
+    border: 0
+
+
+@media (max-width: 1320px)
+    .container
+        width: 750px
+
+@media (max-width: 820px)
+    .container
+        max-width: 700px
+        width: 85%
+    .btn
+        font-size: 14px
+        line-height: 19px
