@@ -83,6 +83,16 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+
+td, th {
+  padding: 20px 20px 40px 20px;
+  border: 1px solid #333;
+}
+
 @media (max-width: 1320px) {
   .container {
     width: 750px;
@@ -97,6 +107,9 @@ button::-moz-focus-inner {
   .btn {
     font-size: 14px;
     line-height: 19px;
+  }
+  td, th {
+    padding: 9px;
   }
 }
 
@@ -604,6 +617,104 @@ button::-moz-focus-inner {
   .features-text {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
+  }
+}
+
+.system {
+  padding-top: 145px;
+  padding-bottom: 170px;
+  background: url("../img/system/bg.jpg") no-repeat center top/cover;
+  color: #FFFFFF;
+}
+
+.system-text {
+  text-align: center;
+}
+
+.system-text__pretitle {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  font-family: Bebas Neue Bold, sans-serif;
+  font-weight: 900;
+}
+
+.system-text__title {
+  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 135px;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: Bebas Neue Bold, sans-serif;
+  font-weight: 900;
+}
+
+.system-table {
+  width: 580px;
+}
+
+.system-table__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  font-family: Bebas Neue Bold, sans-serif;
+  font-weight: 900;
+}
+
+.system-table__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 1320px) {
+  .system-req {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .system {
+    padding-top: 68px;
+    padding-bottom: 203px;
+  }
+  .system-text {
+    text-align: center;
+  }
+  .system-text__pretitle {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .system-text__title {
+    margin-top: 5px;
+    margin-bottom: 71px;
+    font-size: 33px;
+    line-height: 33px;
+  }
+  .system-table {
+    max-width: 580px;
+    width: 95%;
+  }
+  .system-table__title {
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .system-table__subtitle {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

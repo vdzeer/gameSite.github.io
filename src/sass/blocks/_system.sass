@@ -1,0 +1,67 @@
+.system
+    padding-top: 145px
+    padding-bottom: 170px
+    background: url('../img/system/bg.jpg') no-repeat center top / cover
+    color: $text-white
+    &-text
+        text-align: center
+        &__pretitle
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            +header
+        &__title
+            margin: 0
+            margin-top: 9px
+            margin-bottom: 135px
+            font-size: 80px
+            line-height: 80px
+            letter-spacing: 3px
+            text-transform: uppercase
+            +header
+    &-table
+        width: 580px
+        &__title
+            margin: 0
+            margin-bottom: 8px
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            color: $orange
+            +header
+        &__subtitle
+            font-size: 18px
+            line-height: 22px
+            +reg
+
+@media (max-width: 1320px)
+    .system
+        &-req
+            display: flex
+            justify-content: center
+
+@media (max-width: 820px)
+    .system
+        padding-top: 68px
+        padding-bottom: 203px
+        &-text
+            text-align: center
+            &__pretitle
+                font-size: 18px
+                line-height: 18px
+            &__title
+                margin-top: 5px
+                margin-bottom: 71px
+                font-size: 33px
+                line-height: 33px
+        &-table
+            max-width: 580px
+            width: 95%
+            &__title
+                margin: 0
+                margin-bottom: 6px
+                font-size: 18px
+                line-height: 18px
+            &__subtitle
+                font-size: 14px
+                line-height: 16px
