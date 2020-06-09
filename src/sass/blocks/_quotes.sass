@@ -1,0 +1,159 @@
+.quotes
+    padding-top: 200px
+    padding-bottom: 150px
+    background: url('../img/quotes/bg.jpg') no-repeat center top / cover
+    color: $text-white
+    &-block
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-text
+        flex-basis: 48%
+        &__pretitle
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            +header
+        &__title
+            position: relative
+            font-size: 80px
+            line-height: 80px
+            letter-spacing: 3px
+            text-transform: uppercase
+            margin: 0
+            margin-top: 10px
+            margin-bottom: 62px
+            +header
+        &__subtitle
+            text-align: justify
+            font-size: 18px
+            line-height: 22px
+            display: inline-block
+            max-width: 435px
+            margin-bottom: 50px
+            +reg
+        &__btn
+            padding: 20px 27px
+    &-reviews
+        width: 630px
+.quote
+    display: block
+    width: 455px
+    background: rgba(255, 255, 255, 0.08)
+    border-radius: 10px
+    padding: 16px
+    margin-bottom: 30px
+    margin-right: 0
+    &-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 25px
+        &__person
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__img
+            border-radius: 50%
+            width: 62px
+            height: 62px
+        &__user
+            margin-left: 30px
+            display: flex
+            flex-direction: column
+        &__name
+            color: $orange
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            +header
+        &__work
+            font-size: 18px
+            line-height: 22px
+            opacity: .5
+            +reg
+        &__social
+            margin-top: -26px
+    &-text
+        display: inline-block
+        max-width: 407px
+        font-size: 18px
+        line-height: 25px
+        margin-bottom: 20px
+        +reg
+    &-footer
+        display: block
+        font-size: 14px
+        line-height: 19px
+        opacity: .5
+        +reg
+
+.quote:first-child
+    margin-left: 160px
+
+.quote:last-child
+    margin-bottom: 0
+    margin-left: 100px
+
+
+@media (max-width: 1320px)
+    .quotes
+        &-block
+            flex-direction: column
+        &-text
+            text-align: center
+            &__btn
+                display: block
+                margin: auto
+        &-reviews
+            margin-top: 50px
+
+@media (max-width: 820px)
+    .quotes
+        padding-top: 48px
+        padding-bottom: 37px
+        &-text
+            &__pretitle
+                font-size: 18px
+                line-height: 18px
+            &__title
+                font-size: 33px
+                line-height: 33px
+                margin-top: 5px
+                margin-bottom: 34px
+            &__subtitle
+                font-size: 14px
+                line-height: 16px
+            &__btn
+                padding: 13px 15px
+        &-reviews
+            max-width: 630px
+            width: 100%
+            
+    .quote
+        max-width: 630px
+        width: 100%
+        &-header
+            margin-bottom: 15px
+            &__img
+                width: 40px
+                height: 40px
+            &__user
+                margin-left: 23px
+            &__name
+                font-size: 21px
+                line-height: 21px
+            &__work
+                font-size: 14px
+        &-text
+            font-size: 14px
+            line-height: 19px
+            margin-bottom: 15px
+        &-footer
+            font-size: 12px
+            line-height: 16px
+    .quote:first-child
+        margin-left: 0
+    .quote:last-child
+        margin-bottom: 0
+        margin-left: 0
