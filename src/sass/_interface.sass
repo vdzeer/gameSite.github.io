@@ -36,11 +36,33 @@ body
 .btn:hover
     background: lighten(#FFB548, 10%)
 
+input
+    border-style: none
+    background: rgba(255, 255, 255, 0.08)
+    border-radius: 5px
+    border-radius: 2px
+    font-size: 16px
+    line-height: 24px   
+    color: $orange
+    padding: 26px 0 5px 21px
+
+input:focus
+    outline: none
+    border: 1px solid $orange
+
+input:active, input:hover, input:focus
+    outline: 0
+    outline-offset: 0
+
 button:active, button:focus 
     outline: none
 
 button::-moz-focus-inner 
     border: 0
+
+input, textarea, select 
+    -webkit-appearance: none
+
 
 table
     border-collapse: collapse
