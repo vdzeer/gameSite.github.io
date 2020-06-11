@@ -547,15 +547,46 @@ td, th {
   width: 503px;
   height: 610px;
   border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation: show 1s 1;
+          animation: show 1s 1;
+  opacity: .5;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .slider-arrow {
   margin-left: 50px;
 }
 
+.slider-arrow:hover {
+  cursor: pointer;
+}
+
 .arrow-right {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1320px) {
