@@ -28,6 +28,7 @@
         align-items: center
     &-lang
         margin-top: -5px
+        text-align: center
         &__item
             text-decoration: none
             font-size: 14px
@@ -36,6 +37,11 @@
             text-transform: uppercase
             color: $text-white
             +bold
+        &__item:hover
+            transition: .3s
+            color: $orange
+    &-lang ul
+        list-style: none
     &-social
         position: relative
         margin-left: 47px
