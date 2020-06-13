@@ -726,7 +726,7 @@ td, th {
   font-weight: 900;
 }
 
-.features-plan__title:first {
+.features-plan__title:first-child {
   margin: 0;
   margin-bottom: 5px;
 }
