@@ -31,3 +31,4 @@ modalLinks.addEventListener('click', function() {
     modal.classList.add('disable');
 });
 
+new WOW().init();

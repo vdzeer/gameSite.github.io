@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -63,8 +64,8 @@
             </nav>
             <!-- /.navbar -->
             <div class="hero-content">
-                <h1 class="hero-content__title">Выжить любой ценой</h1>
-                <span class="hero-content__subtitle">Испытайте новую социальную игру Battle Royale</span>
+                <h1 class="hero-content__title wow slideInRight" data-wow-duration="1s">Выжить любой ценой</h1>
+                <span class="hero-content__subtitle wow slideInLeft" data-wow-duration="1s">Испытайте новую социальную игру Battle Royale</span>
                 <button class="btn hero-content__btn">
                     <span class="btn-text">Купить в Steam</span>
                     <span class="btn-price">$14.99</span>
@@ -88,7 +89,7 @@
                 <div class="story-text">
                     <span class="story-text__pretitle">Что такое SOS?</span>
                     <h3 class="story-text__title">Социальная игра battle royale</h3>
-                    <span class="story-text__subtitle">
+                    <span class="story-text__subtitle wow slideInLeft" data-wow-duration="1s">
                         Каждый раунд, вы и 15 других участников соревнуются
                         на смертельном острове, заполненного монстрами. 
                         Хитрость в том, что три человека могут выжить. Ты побежишь в
@@ -119,8 +120,8 @@
         <div class="container">
             <div class="features-block">
                 <div class="features-text">
-                    <span class="features-text__pretitle">Что такого особенного?</span>
-                    <h3 class="features-text__title">Особенности</h3>
+                    <span class="features-text__pretitle wow bounceInDown" data-wow-duration="1s">Что такого особенного?</span>
+                    <h3 class="features-text__title wow bounceInDown" data-wow-duration="1s">Особенности</h3>
                     <div class="features-plan">
                         <h4 class="features-plan__title">Выжить любой ценой</h4>
                         <span class="features-plan__description">У вас есть 30 минут, чтобы найти реликвию, сигнал для извлечения и захватить одно из трех мест на спасательном вертолете.</span>
@@ -139,8 +140,8 @@
         <div class="container">
             <div class="system-block">
                 <div class="system-text">
-                    <span class="system-text__pretitle">Потянет ли мой компьютер?</span>
-                    <h3 class="system-text__title">Системные требования</h3>
+                    <span class="system-text__pretitle wow bounceInDown" data-wow-duration="1s">Потянет ли мой компьютер?</span>
+                    <h3 class="system-text__title wow bounceInDown" data-wow-duration="1s">Системные требования</h3>
                 </div>
                 <!-- /.system-text -->
                 <div class="system-req">
@@ -204,7 +205,7 @@
                 </div>
                 <!-- /.quotes-text -->
                 <div class="quotes-reviews">
-                    <div class="quote">
+                    <div class="quote wow slideInRight" data-wow-duration="1s">
                         <div class="quote-header">
                             <div class="quote-header__person">
                                 <img src="../img/quotes/user1.jpg" alt="User1" class="quote-header__img">
@@ -226,7 +227,7 @@
                     </div>
                     <!-- /.quote -->
 
-                    <div class="quote">
+                    <div class="quote wow slideInLeft" data-wow-duration="1s">
                         <div class="quote-header">
                             <div class="quote-header__person">
                                 <img src="../img/quotes/user2.jpg" alt="User2" class="quote-header__img">
@@ -248,7 +249,7 @@
                     </div>
                     <!-- /.quote -->
 
-                    <div class="quote quote-third">
+                    <div class="quote quote-third wow slideInRight" data-wow-duration="2s">
                         <div class="quote-header">
                             <div class="quote-header__person">
                                 <img src="../img/quotes/user3.jpg" alt="User3" class="quote-header__img">
@@ -280,7 +281,7 @@
     <section class="subscribe">
         <div class="container">
             <div class="subscribe-block">
-                <div class="subscribe-img">
+                <div class="subscribe-img wow slideInLeft" data-wow-duration="1s">
                     <img src="../img/subscribe/image.jpg" alt="subscribe" class="subscribe-img_image">
                 </div>
                 <!-- /.subscribe-img -->
@@ -350,6 +351,7 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="../js/wow.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>
